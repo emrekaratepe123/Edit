@@ -106,7 +106,7 @@ To get started with the project, follow these steps:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/Shivam-Sharma-1/QuickEdit.git
+   git clone https://github.com/brunoDev100/Edit.git
    cd quickedit
    ```
 
@@ -162,7 +162,7 @@ quickedit/
 ## Author
 
 - **Shivam Sharma**  
-  [Portfolio](https://shivam-sharma-myportfolio.vercel.app) | [LinkedIn](https://linkedin.com/in/shivamsharma77607) | [GitHub](https://github.com/Shivam-Sharma-1)
+  [Portfolio](https://shivam-sharma-myportfolio.vercel.app) | [LinkedIn](https://linkedin.com/in) | [GitHub](https://github.com/brunoDev100)
 
 ## Documentation
 

